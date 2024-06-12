@@ -4909,9 +4909,7 @@ function rightClickMenu(sObj)
 				if not Option.Modifiable then return end
 				local list = Selection:Get()
 				for i = 1,#list do
-while true do wait(1)
 					list[i]:Clone().Parent = Selection.List[1].Parent or workspace
-end
 				end
 			elseif option == "Delete" then
 				if not Option.Modifiable then return end
